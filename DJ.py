@@ -1,5 +1,5 @@
 
-  2  bxi.py 
+ 
 @@ -13,7 +13,7 @@
 br = mechanize.Browser()
 br.set_handle_robots(False)
