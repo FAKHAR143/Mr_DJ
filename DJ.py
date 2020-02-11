@@ -37,15 +37,12 @@ def jalan(z):
 		time.sleep(00000.1)
 ##### LOGO #####
 logo = """
-||||||||||||||||||||||||||              |||||||||||||||||||||||||||||||||||||||||| 
-|                           ||                             ||| 
-|                             ||                           |||
-|                            ||                            |||
-|                           ||                             |||
-|                        ||                                ||| 
-|||||||||||||||||||||||||            ||||                 ||| 
-                                         |||||||||||||||||    
+MR DJ 
+   THE ANONYMOUS TRICKER
+THE LEGEND 
+   THE GAME CHANGER
 
+ 
 \033[1;91m=======================================
 \033[1;96mAuthor  \033[1;93m: \033[1;92mDJ
 \033[1;96mYouTube \033[1;93m: \033[1;92mAnonymous Trickers
@@ -55,6 +52,7 @@ logo = """
 def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
+		print logo
 		print("\r\033[1;96m \x1b[1;93mSedang masuk \x1b[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 back = 0
 berhasil = []
