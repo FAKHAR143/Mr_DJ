@@ -37,14 +37,14 @@ def jalan(z):
 		time.sleep(00000.1)
 ##### LOGO #####
 logo = """
-@@                           @@  RRrrrrrrrr r        ddddddddddddd                  jjjjjjjjjjjjjjjjjjjjjjjj
-@    @                   @    @  r            r      d             d                            jj
-@       @            @        @  r            r      d               d                          jj
-@          @     @            @  r           r       d                 d                        jj
-@             @               @  rrrrrrrrrr          d               d                          jj
-@                             @  r           r       d             d                            jj
-@                             @  r            r      dddddddddddd                   jj          jj
-                                                                                     jjjjjjjjjjjjj  
+||||||||||||||||||||||||||              |||||||||||||||||||||||||||||||||||||||||| 
+|                           ||                             ||| 
+|                             ||                           |||
+|                            ||                            |||
+|                           ||                             |||
+|                        ||                                ||| 
+|||||||||||||||||||||||||            ||||                 ||| 
+                                         |||||||||||||||||    
 
 \033[1;91m=======================================
 \033[1;96mAuthor  \033[1;93m: \033[1;92mDJ
